@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /* block 3.3 task 1
 func main() {
 	var a int
@@ -21,7 +19,7 @@ func summNumbers(a, b int) int {
 }
 */
 
-// block 3.3 task 2
+/*  block 3.3 task 2
 func main() {
 	var a int
 	var b int
@@ -44,7 +42,7 @@ func maxNum(a, b, c int) int {
 		return c
 	}
 }
-
+*/
 /* 	block 3.4 task 1
 
    	var char1 int
