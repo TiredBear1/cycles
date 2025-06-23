@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /* block 3.3 task 1
 func main() {
 	var a int
@@ -18,6 +20,30 @@ func summNumbers(a, b int) int {
 
 }
 */
+
+// block 3.3 task 2
+func main() {
+	var a int
+	var b int
+	var c int
+	fmt.Println("Only numbers!")
+	fmt.Scan(&a)
+	fmt.Scan(&b)
+	fmt.Scan(&c)
+	maxNum := maxNum(a, b, c)
+	fmt.Println("Result:", maxNum)
+
+}
+
+func maxNum(a, b, c int) int {
+	if a > b && a > c {
+		return a
+	} else if b > a && b > c {
+		return b
+	} else {
+		return c
+	}
+}
 
 /* 	block 3.4 task 1
 
