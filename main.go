@@ -9,13 +9,17 @@ func main() {
 	var char1 int
 
 	for char1 = 1; char1 <= 50; char1++ {
-		if char1%3 == 0 {
+
+		if char1%3 == 0 && char1/5 == 0 {
+			fmt.Println("FizzBuzz")
+		} else if char1%3 == 0 {
 			fmt.Println("Fizz")
 		} else if char1%5 == 0 {
 			fmt.Println("Buzz")
-		} else if char1%3 == 0 && char1/5 == 0 {
-			fmt.Println("FizzBuzz")
+		} else {
+			fmt.Println(char1)
 		}
+
 	}
 
 }
