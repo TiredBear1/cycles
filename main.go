@@ -1,4 +1,10 @@
-package main
+// package main
+
+// import (
+// 	"bufio"
+// 	"fmt"
+// 	"os"
+// )
 
 /* block 3.3 task 1
 func main() {
@@ -43,6 +49,33 @@ func maxNum(a, b, c int) int {
 	}
 }
 */
+
+// block 3.3 task 3
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
+
+func main() {
+	var s string
+	fmt.Println("Only string!")
+
+	reader := bufio.NewReader(os.Stdin)
+	s, _ = reader.ReadString('\n')
+	s = strings.TrimSpace(s) // убираем \n
+
+	result := LenStrings(s)
+	fmt.Println("Result:", result)
+}
+
+func LenStrings(s string) int {
+	return len(s)
+}
+
 /* 	block 3.4 task 1
 
    	var char1 int
