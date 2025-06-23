@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	// 1 задача
+	// task 1
 
 	// var char1 int
 
@@ -22,14 +22,39 @@ func main() {
 
 	// }
 
-	// 2 задача
+	// task 2
 
-	var char1 int
+	// var char1 int
 
-	summ := 0
-	for char1 = 1; char1 <= 100; char1++ {
-		summ += char1
+	// summ := 0
+	// for char1 = 1; char1 <= 100; char1++ {
+	// 	summ += char1
+	// }
+	// fmt.Println(summ)
+
+	// task 3
+
+	var num1 int
+	fmt.Println("Введите число дня недели (1-7):")
+	fmt.Scan(&num1)
+
+	switch num1 {
+	case 1:
+		fmt.Println("Понедельник")
+	case 2:
+		fmt.Println("Вторник")
+	case 3:
+		fmt.Println("Среда")
+	case 4:
+		fmt.Println("Четверг")
+	case 5:
+		fmt.Println("Пятница")
+	case 6:
+		fmt.Println("Суббота")
+	case 7:
+		fmt.Println("Воскресенье")
+	default:
+		fmt.Println("Такой цифры дня недели нет!")
 	}
-	fmt.Println(summ)
 
 }
