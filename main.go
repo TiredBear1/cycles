@@ -3,7 +3,19 @@ package main
 import "fmt"
 
 func main() {
+
+	// 1 задача на реализацию(можно прочекать редми файл)
+
 	var char1 int
-	fmt.Scan(&char1)
-	fmt.Println(char1)
+
+	for char1 = 1; char1 <= 50; char1++ {
+		if char1%3 == 0 {
+			fmt.Println("Fizz")
+		} else if char1%5 == 0 {
+			fmt.Println("Buzz")
+		} else if char1%3 == 0 && char1/5 == 0 {
+			fmt.Println("FizzBuzz")
+		}
+	}
+
 }
